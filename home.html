@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather themed app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<!-- weather box -->
+
+<body class="flex items-center justify-center min-h-screen bg-gray-200 transition-all duration-500" id="app">
+    <!-- <div class="text-center p-8 bg-white rounded shadow-lg max-w-md w-full">
+        <h1 class="font-bold text-2xl mb-4">Weather App</h1>
+        <input type="text" id="city-input" class="w-full p-2 mb-4 border border-gray-400 rounded-lg"
+            placeholder="Enter a city....">             
+
+        <button id="get-weather" class="w-full bg-blue-600 text-white rounded-lg hover:bg-blue-900">
+            Get Weather
+        </button>
+        <div id="weather-info" class="mt-6 hidden">
+            <h2 id="city-name" class="text-xl font-semibold"></h2>
+            <p id="temperature" class="text-lg"></p>
+            <p id="weather-description" class="text-gray-600"></p>
+        </div>
+    </div> -->
+
+
+    <div class="text-center p-8 bg-white rounded shadow-lg max-w-md w-full">
+        <h1 class="font-bold text-2xl mb-4">Weather App</h1>
+        <input type="text" id="city-input" class="w-full p-2 mb-4 border border-gray-400 rounded-lg"
+            placeholder="Enter a city....">
+
+        <button id="get-weather" class="bg-blue-600 w-full text-white py-2 px-4 rounded-lg hover:bg-blue-900">Get
+            Weather</button>
+
+        <div id="weather-info" class="hidden mt-4">
+            <h2 id="city-name" class="text-xl font-semibold"></h2>
+            <p id="temperature" class="mt-2 text-lg"></p>
+            <p id="weather-description" class="mt-2"></p>
+            <img id="weather-icon" class="w-16 h-16 mt-4" alt="Weather Icon">
+            <div id="wind-speed" class="text-white mt-4 hidden">Wind Speed: -- km/h</div>
+            <div id="humidity" class="text-white mt-2">Humidity: --%</div>
+        </div>
+    </div>
+
+    <!-- weather box ends -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
